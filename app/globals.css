@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+:root{--bg:#faf9f7;--surface:#fff;--sunk:#f2f0ec;--line:#e6e3dd;--fg:#1a1916;--muted:#6b6862;--accent:#d9481f;--accent-fg:#fff;color-scheme:light}
+.dark{--bg:#0f0f0e;--surface:#171716;--sunk:#1e1d1b;--line:#2a2927;--fg:#f2f0ec;--muted:#9a968e;--accent:#ff6b3d;--accent-fg:#150a05;color-scheme:dark}
+@theme inline{--color-bg:var(--bg);--color-surface:var(--surface);--color-sunk:var(--sunk);--color-line:var(--line);--color-fg:var(--fg);--color-muted:var(--muted);--color-accent:var(--accent);--color-accent-fg:var(--accent-fg);--font-sans:var(--font-inter),system-ui,sans-serif;--font-display:var(--font-fraunces),Georgia,serif}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
