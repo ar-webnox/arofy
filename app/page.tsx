@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { StudioProvider, Hero, Workspace, Popular, Presets } from "@/components/studio";
+import { ToolsGrid } from "@/components/tools/tools-grid";
 import { HowItWorks, About, Faq, Footer } from "@/components/content";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
     <StudioProvider>
       <Header />
       <main>
-        <Hero /><Workspace /><Popular /><Presets /><HowItWorks /><About /><Faq />
+        <Hero /><Workspace /><Popular /><Presets /><ToolsGrid /><HowItWorks /><About /><Faq />
       </main>
       <Footer />
     </StudioProvider>

@@ -55,7 +55,7 @@ export function Footer() {
     <footer className="border-t border-line">
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-10 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <div><p className="font-display text-lg font-semibold text-fg">{SITE.name}</p><p>{SITE.tagline}</p></div>
-        <nav aria-label="Footer" className="flex gap-5"><a href="/#styles" className="hover:text-fg">Text Styles</a><a href="/design-studio" className="hover:text-fg">Design Studio</a><a href="/#about" className="hover:text-fg">About</a><a href="#top" className="hover:text-fg">Back to top</a></nav>
+        <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2"><a href="/#styles" className="hover:text-fg">Text Styles</a><a href="/text-tools" className="hover:text-fg">Text Tools</a><a href="/social-creator" className="hover:text-fg">Social Creator</a><a href="/username-generator" className="hover:text-fg">Usernames</a><a href="/batch-styler" className="hover:text-fg">Batch Styler</a><a href="/design-studio" className="hover:text-fg">Design Studio</a><a href="/#about" className="hover:text-fg">About</a><a href="#top" className="hover:text-fg">Back to top</a></nav>
         <p>© {new Date().getFullYear()} {SITE.name}</p>
       </div>
     </footer>
